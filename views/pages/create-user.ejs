@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<% include ../includes/header.ejs %>
+	</head>
+
+	<body>
+		<% include ../includes/nav.ejs %>
+		<div class="jumbotron text-center">
+			<div class="container">
+				<h1><%= title %></h1>
+				<h2><%= subTitle %></h2>
+				<form class="newUser" action="/create-user" method="POST">
+					<legend>Create New User</legend>
+					<label>Enter your User Name</label>
+					<input type="text" name="username" id="username" />
+					<br /><br />
+					<button type="submit" onclick="href="/user" class="rgUser">Register User Name</button>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

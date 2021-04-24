@@ -3,3 +3,7 @@
  * the public/scripts folder. They can then be linked
  * to your EJS files and used there.
  ****************************************************/
+
+document.getElementById("rgBtn").onclick = function () {
+    location.href = "users";
+}
